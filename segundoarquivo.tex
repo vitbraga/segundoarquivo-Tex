@@ -1,0 +1,131 @@
+% Este comando é importante para a criação do seu documento principal
+\documentclass[12pt, a4paper, oneside]{book}
+
+% estes pacotes são importantes para a estruturação do seu trabalho
+\usepackage[T1]{fontenc} % pacote define aleitura do texto diretamente pelo teclado
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
+\linespread{1.5} %espaço entre as linhas
+\usepackage[normalem]{ulem}% pacote para uso do comando \sout
+\usepackage{indentfirst} % pacote de identação
+\usepackage{color}
+\usepackage[dvipsnames, svgnames]{xcolor}
+
+\hyphenation {pa-la-vra}
+\hyphenation {cau-sa-li-da-de}
+\hyphenation {cons-tan-te}
+\hyphenation {par-ti-cu-lar}% para separar as palavras de forma correta
+
+\definecolor {laranja} {RGB} {255, 165, 0}
+
+\begin{document}
+\title{curso latex}
+\author{Vitória Augusta Braga de Souza \footnote{doutora em Engenharia do conhecimento}}
+\date{23 de Janeiro de 2023}
+\maketitle % criação outomatica de título autor e data
+\begin{flushleft}% texto alinhado a esquerda senão quiser o alinhamento deixa no defull
+
+Abstract
+This article aims to study the state of the art of the deglobalization theme when it comes to global supply chains, to answer the question: How is the deglobalization of the logistics chain being studied? A systematic literature review was carried out in the Scopus, Web of Science and Dimensions databases using the eight-step methodology developed by Willerding and Lapolli (2014) and the PRISMA methodology was used to select the articles. The search was carried out with the following keywords: deglobalization, logistics and economic nationalism, their translations, and their respective synonyms, as well as related expressions. 57 articles were found that were analyzed using the VOSviewer software to identify the occurrence of co-citation among the articles. After using the exclusion and inclusion criteria, eight articles were selected. It can be concluded that the selected authors converge in the view that the deglobalization theme began with the 2008 crisis and emerged more consistently after the protectionist administration of President Donald Trump, which increased tax barriers and started a cold war with China. The COVID-19 pandemic worsened the situation, as sanitary barriers led to the closure of ports, raising the cost of freight and supplies. When it was suggested that the economy would warm up again, war broke out in Ukraine and a new strain of the virus emerged, causing a new lockdown. To face these advents, organizations need to be resilient and rethink logistics and self-sufficiency strategies, avoiding dependence on imports of inputs and products from other countries. The topic is still being poorly studied, as there is a small number of documents dealing with the topic and a significant duplication of articles in the bases.\newline
+
+Keywords: Deglobalization, Supply Chain, Economic Nationalism
+\end{flushleft}
+
+\noindent
+\textbf {Esta palavra ficará em negrito}\\
+{\bfseries Esta palavra ficará em negrito}\\
+
+\noindent
+\underline {Esta passagem está sublinhada}\\
+\sout {Esta passagem está sublinhada, porém na palavra, como um risco}\\
+
+\noindent
+\textsf{Esta passagem está em Sans-Serif}\\
+{\sffamily Esta passagem está em Sans-Serif}\\
+
+\noindent
+\texttt{Esta frase está em um estilo denominado letra de máquina}\\
+{\ttfamily Esta frase está em um estilo denominado letra de máquina}\\
+
+\textrm{Esta frase está em um estilo denominado romano}\\
+{\rmfamily Esta frase está em um estilo denominado romano}\\
+
+\noindent
+\small {o texto fica assim}\\
+\large{o texto fica assim}\\
+\Huge {o texto fica assim}\\
+
+\begin{small} % pacote para mudar o tamanho de fontefonte
+
+Deglobalization is a term used by economists and social scientists to refer to the current process of crumbling the ideals of economic, social, and cultural globalization that has gained strength in the last four or five decades (APD, 2022). In the definition of Witt (2019, p. 1054) deglobalization can be understood as “the process of weakening the interdependence between nations”. Or also as the adoption of isolationist measures, such as trade protectionism that promote resistance to interaction with other economies (BAUMANN, 1990).
+\end{small}
+
+\begin{footnotesize}% tamanho semelhante ao Times 12
+
+%ambientes para listagem de itens
+\begin {itemize} 
+\item Olá temos um marcador simples.
+\item Aqui vai mais um marcador.
+\end {itemize}
+
+\begin {itemize}
+\item [$\heartsuit$] Olá temos um marcador que representa um coração.
+\item [$\sharp$] Olá temos um marcador que representa um hashtag.
+\end {itemize}
+
+\begin {enumerate}
+\item Olá, esse é o \textbf{primeiro} item!
+\item Olá, esse é o \textit{segundo} item
+\end {enumerate}
+Esta frase tem o seguinte item \footnote{Que irá para o rodapé}
+
+\end{footnotesize}
+
+\chapter{Introdução}
+
+\section{contextualização}
+
+\subsection{história de vida} 
+
+\subsubsection{fatos vividos e sentidos}
+
+\textcolor {laranja} {esta frase vai aparecer laranja}\\
+
+{\color{Aqua} {Este trecho utilizará a cor aqua}}\\
+{\color{Violet} {Este trecho utilizará a cor violeta}}\\
+
+%\pagecolor{blue} Mudará a cor de fundo para azul\\
+\colorbox{Purple} {caixa de cor púrpura}\\
+\fcolorbox{red}{blue} {O texto terá fundo azul e borda vermelha}\\
+
+\newpage
+
+\begin{center}
+\rule{10cm} {0.02cm}\\
+Vitória Augusta Braga de Souza
+\end{center}
+
+Vitória Augusta Braga de Souza
+
+\hrulefill
+%\dotfill
+
+Professora  adjunta\\
+
+\begin{center}
+\rule{10cm} {0.04cm}\\
+Vitória Augusta Braga de Souza
+
+\vspace{2.0cm}
+
+\rule{10cm} {0.02cm}\\
+Édis Mafra Lapolli\\
+
+Olá,  \hspace{5cm}  vou me afastar
+\end{center}
+
+\include{cap1}
+
+
+\end{document}
