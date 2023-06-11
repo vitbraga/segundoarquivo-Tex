@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
 \usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
-\linespread{1.5} %espaço entre as linhas
+\linespread{2.0} %espaço entre as linhas
 \usepackage{amsmath,array, amssymb}
 
 \begin{document}
@@ -210,6 +210,44 @@ x - 1, & x = 2 \\
 2x +3, & x \neq 2
  \end{array}
 \right.
+\end{equation}
+
+\vspace{1,0cm}
+\begin{center}
+detreminantes
+\end{center}
+
+\begin{equation}
+det(A)= 
+\left\vert
+\begin{array}{lcr}
+a_{11} & b_{12} & c_{13}\\
+d_{21} & e_{22} & f_{23}\\
+g_{31} & h_{32} & i_{33}\\
+\end{array}
+\right\vert
+\end{equation}
+
+\vspace{1,0cm}
+
+\begin{eqnarray} %vspace não funciona no ambiente matemático
+\overline{(A \cdot B)}\\
+\overline{( A + B + C) \cdot \left(\frac{A}{B})\right)}\\
+\vec{F}= \overline{A \cdot B \cdot C} + \overline{(A-B-C)}
+\end{eqnarray}
+
+\vspace{1,0cm}
+
+para colocar espaço ente os elementos da expressão usar \ e "," ou ";" ou ";"
+\vspace{1,0cm}
+\begin{equation}
+y(0,1\,m,30\,s) = (0,05\,m)\,sen(1 - 1500)\Rightarrow (0,05\, m)\,sen\,(-1499)
+\end{equation}
+
+\vspace{1,0cm}
+Código fonte stackrel - colocar um elemento sobre o outro
+\begin{equation} 
+A + B \;\stackrel{2\,mim}{\longrightarrow}\;C + D
 \end{equation}
 
 \end{document}
