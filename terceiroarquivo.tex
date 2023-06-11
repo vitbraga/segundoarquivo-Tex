@@ -1,0 +1,215 @@
+\documentclass[12pt, a4paper, oneside]{article}
+
+\usepackage[T1]{fontenc} % pacote define aleitura do texto diretamente pelo teclado
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
+\linespread{1.5} %espaço entre as linhas
+\usepackage{amsmath,array, amssymb}
+
+\begin{document}
+
+\title{Capítulo 4 Ambiente matemático}
+\author{Vitória Augusta Braga de Souza \footnote{doutora em Engenharia do conhecimento}}
+\date{23 de Janeiro de 2023}
+\maketitle % criação outomatica de título autor e data
+
+segundo a equação $ x=2 $, x está valendo 2.
+abaixo utilizando o ambiente equation: 
+\begin{equation}
+x=2.
+\end{equation}
+ a equação fica centraalizada e já numerada
+ 
+ \begin{equation}
+ \frac{a}{b}
+ \end{equation}
+ 
+ \begin{equation}
+ 3^{2}
+ \end{equation}
+ 
+ \begin{equation}
+ \sqrt[3]{27}
+ \end{equation}
+ 
+ \begin{equation}
+ \log_{2} 4
+ \end{equation}
+ 
+ equação quimica escreve assim:
+ \begin{equation}
+ 6 CO_{2} = 6 H_{2}O + calor \rightarrow 6 O_{2} + C_{6}H_{12}O_6
+ \end{equation}
+ 
+ AS EXPRESSÕES TRIGONOMÉTRICAS SÃO ESCRITAS ASSIM:
+ $\sin 60°$
+ ou assim:
+\begin{equation}
+\ cos 60°.
+\end{equation}
+
+As funçõe são escritas assim:
+\begin{equation}
+f(x)=\sqrt[3]{x} + 2x + x^{2} 
+\end{equation}
+
+\begin{equation}
+f(x)= 2x^{2} + x + 4
+\end{equation}
+
+\begin{equation}
+\left( \frac{a}{b}\right) 
+\end{equation}
+
+%limites - limite de x tendendo a 1 de x ao cubo menos 3
+
+\begin{equation}
+\lim_{x\rightarrow 1}(x^{3}- 3)
+\end{equation}
+
+\begin{equation}
+\lim_{x\rightarrow 2} \sqrt{(x^{4}-8)}
+\end{equation}
+ 
+ \begin{equation}
+ \lim_{x\rightarrow -3} \frac{x^{2}-9}{x+3}
+ \end{equation}
+ 
+ \begin{equation}
+ \lim_{x\rightarrow\infty} \frac{1}{2x}
+ \end{equation}
+
+\begin{equation}
+\int(e^{-x} + 2^{x})dx
+\end{equation}
+
+\begin{equation}
+\int^{b}_{a} f(x)dx = F(b)- F (a)
+\end{equation}
+%se colocar o _{a} antes não altera //
+
+ lei da gravitação universal Newton - uso do vetor
+\begin{equation}
+\vec{F} = -G\frac{m_1m_2}{r^2}\hat{r}
+\end{equation}
+
+\begin{equation}
+6,6 \times 10^{-11} \frac{m^{3}}{Kg^{-1} 8^{-2}•}
+\end{equation}
+
+\begin{equation}
+f(t)= \frac{1}{2} + \frac{\cos\frac{\pi}{3}}{2\pi}\sum_{-\infty} ^{\infty} \frac{1}{n} e^{Bn2\pi t}
+\end{equation}
+% tem que colar espaço ente o comando e a letra em sequencia
+\vspace{1,0cm}
+
+\begin{equation}
+\frac{a}{b+\frac{b+1}{c+\frac{c+1}{d+\frac{d+1}{e}}}}
+\end{equation}
+
+%\lbrace é o comando da chaves ou usa as chaves do teclado
+
+\vspace{1,0cm}
+
+\begin{equation}
+\frac{d}{dt}\left( mr^{2} \frac{d\theta}{dt}\right) = 0
+\end{equation}
+\vspace{1,0cm}
+%matriz 
+
+\begin{equation}
+\left(
+\begin{array}{lr}
+ a & b \\
+ c & d \\
+ 
+\end{array}
+\right) 
+\end{equation}
+
+\vspace{1,0cm}
+
+\begin{equation}
+\left(
+\begin{array}{lcr}
+ a & b & c \\
+ d & e & f \\
+ g & h & i \\
+\end{array}
+\right) 
+\end{equation}
+
+\vspace{1,0cm}
+%ambiente pmatriz. Para funcionar é necessário acrescentar no preambolo os pacotes {amsmath,array, amssymb}
+\begin{equation}
+\begin{pmatrix}
+ x & y & z\\
+ w & h & x\\
+\end{pmatrix}
+\end{equation}
+
+\vspace{1,0cm}
+
+\begin{equation}
+\begin{pmatrix}
+ x & y & z & i\\
+ w & h & r & h\\
+ r & t & j & g\\
+\end{pmatrix}
+\end{equation}
+  
+\vspace{1,0cm}
+% sistema linear array
+
+\begin{equation}
+\left\lbrace % só uma chave 
+\begin{array}{cc}% cc centralizado
+      3x+2y =6\\
+      2x+3y = 5
+\end{array}
+\right. % não aparece a outra chave
+\end{equation} 
+
+\vspace{1,0cm}
+
+\begin{equation}
+\left\lbrace
+\begin{array}{ccc}
+  x + y + z = 6\\
+  x + 2y + 2z =9\\
+  2x + y + 3z = 11
+\end{array}
+\right.
+\end{equation}
+
+% sistema linear eqnarray -equações independentes sem chaves
+
+\begin{eqnarray}
+      3x+2y =6\\
+      2x+3y = 5
+\end{eqnarray}
+
+\vspace{1,0cm}
+
+\begin{eqnarray}
+x + y + z = 6\\
+  x + 2y + 2z =9\\
+  2x + y + 3z = 11
+\end{eqnarray}
+
+\vspace{1,0cm}
+
+% sistema linear condicional
+
+\begin{equation}
+f(x)=
+\left\lbrace
+\begin{array}{cc}
+x - 1, & x = 2 \\
+2x +3, & x \neq 2
+ \end{array}
+\right.
+\end{equation}
+
+\end{document}
