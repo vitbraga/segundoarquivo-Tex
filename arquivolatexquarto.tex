@@ -1,0 +1,169 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[T1]{fontenc} % pacote define aleitura do texto diretamente pelo teclado
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
+\linespread{1.0} %espaço entre as linhas
+\usepackage{amsmath,array,amssymb}
+\usepackage[dvipsnames, svgnames,xllnames ]{xcolor}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{afterpage}
+\usepackage{indentfirst}
+
+\begin{document}
+
+tabela 1
+\begin{tabular}{|l|c|r|} \hline
+Célula 1 & Célula 2 & Célula 3 \\ \hline
+Célula 4 & Célula 5 & Célula 6 \\ \hline
+Célula 7 & Célula 8 & Célula 9 \\ \hline
+\end{tabular}
+
+\vspace{2cm}
+tabela 2
+\begin{tabular}{|c|c|c|c|}\hline
+\multicolumn{4}{|c|}{Meses do ano}\\ \hline 
+Janeiro & fevereiro & Março & Abril\\ \hline
+Maio & Junho & Julho & Agosto\\ \hline
+Setembro & Outubro & Novembro & Dezembro\\ \hline
+\end{tabular}
+
+\vspace{2cm}
+tabela 3\\
+\vspace{2cm}
+\begin{tabular}{|c|cc|} \hline 
+Números & \multicolumn{2}{|c|}{Meses do Ano e Abreviação}\\ \hline
+1 & Janeiro & Jan\\ \cline{2-3} % cline cria a linha horizontal que liga a coluna 2 a 3
+2 & Fevereiro & Fev\\ \cline{2-3}
+3 & Março & Mar\\ \cline{2-3}
+4 & Abril & Abr\\ \cline{2-3}
+5 & Maio & Mai\\ \cline{2-3}
+6 & Junho & Jun\\ \hline
+\end{tabular}
+
+ambiente table e tabular//
+
+\begin{table}[h]
+\centering  %centailizar na folha
+\caption{maiores paises do mundo em extensão} % comando para título da tabela
+\vspace{0.5cm}
+\begin{tabular}{c|cc}
+Posição & Paises & Extensão Territorial ($km^{2}$)\\
+\hline
+1 & Rússia &          17.098.246\\
+2 & Canadá &           9.984.670\\
+3 & China &            9.596.961\\
+4 & Estados Unidos &   9.371.174\\
+5 & Brasil &           8.515.767\\
+\end{tabular}
+\end{table}
+
+\vspace{2cm}
+Como colocar figura no projeto - não esquecer de colocar o pacote graphicx no preâmbulo
+\vspace{2cm}
+
+
+\begin{figure}[h]
+ \centering
+ \caption{imagem de uma lâmpada}
+ \includegraphics[scale=1]{C:/Users/Eu/Pictures/lampada.png} % scale define tamanho
+ \label{imagemlampada}
+  \end{figure}
+  
+\newpage
+  
+\vspace{2cm}
+  MINIPAGE - página de rosto
+  
+\vspace{2cm}
+
+\begin{minipage}{10cm}
+"Imagine quando seu professor pede para você escrever um estudo de caso. Não tem idéia de como formatar um estudo de caso. O Fastformat resolve isso para você falando o que deve ser escrito em cada uma das seções do estudo. Isso tudo já se encontra disponível no Fastformat quando você utiliza a funcionalidade de “Modelos“.
+\end{minipage} \newpage
+
+
+
+\mbox{} % permite usar vspace para descer o texto
+\vspace{15cm}
+
+\begin{flushright}
+\begin{minipage}{10cm}
+\hrulefill
+
+"Imagine quando seu professor pede para você escrever um estudo de caso. Não tem idéia de como formatar um estudo de caso. O Fastformat resolve isso para você falando o que deve ser escrito em cada uma das seções do estudo. Isso tudo já se encontra disponível no Fastformat quando você utiliza a funcionalidade de “Modelos“.
+
+\hrulefill
+
+\textbf{Orientador: Prof. Dr: Fulano} 
+\end{minipage}
+\end{flushright} \newpage
+
+fazer capa
+
+\begin{titlepage}
+\addtolength{\topmargin}{1.5cm} % distancia do topo da página para primeiro elemento da capa
+
+\setlength{\baselineskip}{1.4\baselineskip} 
+
+\begin{center}
+\large{UNIVERSIDADE FEDERAL DE GOIÁS}
+%tem que deixar um espaço
+
+\large{FACULDADE DE ADMINISTRAÇÃO}
+\end{center}
+
+
+\vspace{2cm}
+
+\begin{center}
+\Large\textbf{Organizações Empreendedoras são Saudáveis?}
+\end{center}
+
+\vspace{1,5cm}
+\begin{center}
+\large(Autor do trabalho
+\end{center}
+
+\vspace{1,5cm}
+
+\begin{flushright}
+\begin{minipage}{12cm}
+\hrulefill
+
+Trabalho final de graduação do curso de Administração da Universidade Federal de Goiás apresentado como pré requisito para a obtenção do grau de bacharelado em Administração.
+
+\hrulefill\\
+
+\textbf{Orientador: Prof. Dr. Fulano}
+\end{minipage}
+\end{flushright}
+
+\setlength{\baselineskip}{0.7\baselineskip} 
+\vfill % coloca um espaço ajusrtado para não usar vspace
+
+\begin{center}
+Goiânia
+
+Junho de 2023.
+\end{center}
+\end{titlepage}
+
+\vspace{1,5cm}
+
+RESUMOS E AGRADECIMENTOS
+
+\chapter*{Resumo}
+
+\noindent
+Aqui vai o texto do resumo\\
+\noindent
+\textbf{Palavras-Chaves:}
+
+\chapter*{Agradecimentos}
+\noindent
+Aqui vai os agradecimentos as pessoasmais proximas ao trabalho
+
+\end{document}
