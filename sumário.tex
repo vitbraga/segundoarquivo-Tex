@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[T1]{fontenc} % pacote define aleitura do texto diretamente pelo teclado
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
+\linespread{1.5} %espaço entre as linhas
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[nottoc]{tocbibind}
+\usepackage{ftnxtra}%pacotes para ajustar o ambiente caption
+\usepackage{fnpos}
+\usepackage{lipsum}
+\usepackage{makeidx}
+
+\makeindex
+
+\begin{document}
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+
+
+\chapter{Introdução}
+\section{Assunto 1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1.0]{C:/Users/Eu/Pictures/lampada.png}
+\label{ImagemLampada}
+\caption{Imagem de uma lâmpada  \cite{SOUZA}\footnote{Imagem retirada da internet}}
+\end{figure}
+\footnotetext{Imagem retirada da internet}
+
+\section{Assunto 2}
+\chapter{Desenvolvimento}
+
+\section{Assunto 3}
+
+\begin{table}[h]
+\centering  %centailizar na folha
+\caption{maiores paises do mundo em extensão \cite{IBGE}\footnote{Retirado do site do IBGE}} % comando para título da tabela e footnotetext
+\vspace{0.5cm}
+\begin{tabular}{c|cc}
+Posição & Paises & Extensão Territorial ($km^{2}$)\\
+\hline
+1 & Rússia &          17.098.246\\
+2 & Canadá &           9.984.670\\
+3 & China &            9.596.961\\
+4 & Estados Unidos &   9.371.174\\
+5 & Brasil &           8.515.767\\
+\end{tabular}
+\end{table}
+\footnotetext{Retirado do site do IBGE}
+\section{Assunto 4}
+Aprenda, persista e estude a cada dia \cite{SOUZA} % precisa dos pacotes usepackage[nottoc]{tocbibind}
+
+possuo \index{graduação} graduação em \index{graduação!Administração de empresa}bacharel em Administração de empresa e bacharel \index{graduação!engenharia de produção} em engenharia de produção.
+
+\chapter{Conclusão}
+
+\section{Assunto 5}
+
+\begin{thebibliography}{1}
+\bibitem{SOUZA} SOUZA, V. A. B. de; Curso de LaTeX. Universidade de São Paulo, 2023.
+\end{thebibliography}
+
+\printindex
+\end{document}
+
+
+
+

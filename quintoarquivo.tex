@@ -1,0 +1,72 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[T1]{fontenc} % pacote define aleitura do texto diretamente pelo teclado
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry} % margem
+\linespread{1.0} %espaço entre as linhas
+\usepackage{amsmath,array,amssymb}
+\usepackage[dvipsnames, svgnames,xllnames ]{xcolor}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{afterpage}
+\usepackage{indentfirst}
+\usepackage{subfigure}
+\begin{document}
+
+REFERENCIANDO EQUAÇÔES
+\vspace{1,5cm}
+
+\begin{equation}\label{Eqtrigonometria}
+\sin^{2}\alpha +\cos^\alpha = 1
+\end{equation}
+ A equação \ref{Eqtrigonometria} é a primeira relação fundamental da trigonometria.
+ 
+ \newpage
+ 
+\vspace{1,5cm}
+%INSERIR SUBFIGURAS  precisa do pacote subfigure no preambulo
+
+\begin{figure}
+\centering
+
+\subfigure{(a)Planeta Terra \label{Figterra}}\includegraphics[scale=0.5]{C:/Users/Eu/Pictures/terra.png}
+\subfigure{(b)Planeta Marte \label{Figmarte}}\includegraphics[scale=0.5]{C:/Users/Eu/Pictures/marte.png}
+\subfigure{(c)Planeta Saturno \label{Figsaturno}}\includegraphics[scale=0.5]{C:/Users/Eu/Pictures/saturno.png}
+\caption{Alguns planetas do Sistema Solar}\label{figSistemaSolar}
+
+\end{figure}
+
+\vspace{0.2cm}
+
+Nas imagens acima, \ref{Figterra} representa o planeta Terra, \ref{Figmarte} o planeta vermelho Marte e \ref{Figsaturno} oplaneta Saturno. A imagem \ref{figSistemaSolar}, portanto comtém 3 planetas do Sistema Solar.
+
+
+%SÚMÁRIO
+\tableofcontents
+\newpage
+
+\chapter{Introdução}
+
+\section{Assunto 1}
+
+\section{Assunto 2}
+
+\chapter{Desenvolvimento}
+
+\section{Assunto 3}
+
+\section{Assunto 4}
+
+\chapter{Conclusão}
+
+\section{Assunto 5}
+
+
+
+
+
+
+
+\end{document}
